@@ -5,21 +5,19 @@
 Summary:	Stopbutton plugin for Gnome Music Player Client
 Summary(pl.UTF-8):	Wtyczka avahi dla odtwarzacza Gnome Music Player Client
 Name:		gmpc-plugin-avahi
-Version:	0.15.5.0
+Version:	0.16.96
 Release:	0.1
 License:	GPL
 Group:		X11/Applications/Sound
-# http://download.sarine.nl/gmpc-0.15.5/
-Source0:	http://download.sarine.nl/gmpc-0.15.5/%{source_name}-%{version}.tar.gz
-# Source0-md5:	faea4e3c4cbc8f7d8fa82ebd710110c6
-Patch0:		%{name}-plugins_path.patch
+Source0:	http://dl.sourceforge.net/musicpd/%{source_name}-%{version}.tar.gz
+# Source0-md5:	b28c4936ab9cf37bbd1a21a1a0fd3cfb
 URL:		http://www.sarine.nl//gmpc-plugins
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gmpc-devel >= 0.15.5.0
+BuildRequires:	gmpc-devel >= 0.16.96
 BuildRequires:	gtk+2-devel >= 2:2.4
 BuildRequires:	libglade2-devel
-BuildRequires:	libmpd-devel >= 0.15.0
+BuildRequires:	libmpd-devel >= 0.16.96
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -33,7 +31,6 @@ przykład "Gatunek zawiera 'jazz' i wykonawca nie zawiera 'Jones'".
 
 %prep
 %setup -qn %{source_name}-%{version}
-%patch0 -p1
 
 %build
 %{__libtoolize}
@@ -53,11 +50,11 @@ install -d $RPM_BUILD_ROOT%{_libdir}/gmpc
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm $RPM_BUILD_ROOT%{_libdir}/gmpc/*.la
+rm $RPM_BUILD_ROOT%{_libdir}/gmpc/plugins/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/gmpc/*.so
+%attr(755,root,root) %{_libdir}/gmpc/plugins/*.so
