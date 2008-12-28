@@ -5,19 +5,19 @@
 Summary:	Stopbutton plugin for Gnome Music Player Client
 Summary(pl.UTF-8):	Wtyczka avahi dla odtwarzacza Gnome Music Player Client
 Name:		gmpc-plugin-avahi
-Version:	0.16.96
-Release:	0.1
+Version:	0.17.0
+Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/musicpd/%{source_name}-%{version}.tar.gz
-# Source0-md5:	b28c4936ab9cf37bbd1a21a1a0fd3cfb
-URL:		http://www.sarine.nl//gmpc-plugins
+# Source0-md5:	62661f32faa32be4a80fd212e36a4c0c
+URL:		http://gmpcwiki.sarine.nl/index.php?title=Avahi
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gmpc-devel >= 0.16.96
+BuildRequires:	gmpc-devel >= 0.17.0
 BuildRequires:	gtk+2-devel >= 2:2.4
 BuildRequires:	libglade2-devel
-BuildRequires:	libmpd-devel >= 0.16.96
+BuildRequires:	libmpd-devel >= 0.17.0
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
