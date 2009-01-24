@@ -19,6 +19,7 @@ BuildRequires:	libmpd-devel >= 0.17.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel
 BuildRequires:	pkgconfig
+Requires:	avahi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
