@@ -2,20 +2,20 @@
 Summary:	Avahi plugin for Gnome Music Player Client
 Summary(pl.UTF-8):	Wtyczka avahi dla odtwarzacza Gnome Music Player Client
 Name:		gmpc-plugin-avahi
-Version:	0.18.100
+Version:	0.19.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/musicpd/%{source_name}-%{version}.tar.gz
-# Source0-md5:	593f0c0de32e85e985a9a574fd919ef5
+# Source0-md5:	cc22a3604fbb8371cc98a086cf6e68bb
 URL:		http://gmpc.wikia.com/wiki/GMPC_PLUGIN_AVAHI
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	avahi-glib-devel
-BuildRequires:	gmpc-devel >= 0.18.100
+BuildRequires:	gmpc-devel >= 0.19.0
 BuildRequires:	gtk+2-devel >= 2:2.4.0
 BuildRequires:	libglade2-devel
-BuildRequires:	libmpd-devel >= 0.18.100
+BuildRequires:	libmpd-devel >= 0.19.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel
 BuildRequires:	pkgconfig
