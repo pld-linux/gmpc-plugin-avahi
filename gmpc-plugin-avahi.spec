@@ -12,8 +12,10 @@ URL:		http://gmpc.wikia.com/wiki/GMPC_PLUGIN_AVAHI
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	avahi-glib-devel
+BuildRequires:	gettext-devel
 BuildRequires:	gmpc-devel >= 0.19.0
 BuildRequires:	gtk+2-devel >= 2:2.4.0
+BuildRequires:	intltool
 BuildRequires:	libmpd-devel >= 0.19.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel
